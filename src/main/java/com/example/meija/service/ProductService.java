@@ -2,7 +2,7 @@ package com.example.meija.service;
 
 import com.example.meija.exception.UserNotFoundException;
 import com.example.meija.model.Products;
-import com.example.meija.repository.WaterPurificationRepo;
+import com.example.meija.repository.ProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,9 +11,9 @@ import java.util.UUID;
 
 @Service
 public class ProductService {
-    private final WaterPurificationRepo productsRepo;
+    private final ProductRepo productsRepo;
     @Autowired
-    public ProductService(WaterPurificationRepo productsRepo) {
+    public ProductService(ProductRepo productsRepo) {
         this.productsRepo = productsRepo;
     }
 

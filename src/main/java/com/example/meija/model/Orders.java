@@ -3,7 +3,7 @@ package com.example.meija.model;
 import javax.persistence.*;
 import java.io.Serializable;
 @Entity
-public class orders  implements Serializable {
+public class Orders implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = false,updatable = false)//cannot be changed once it is set
@@ -13,7 +13,7 @@ public class orders  implements Serializable {
     private double amount;
    private double quantity;
 
-    public orders(Long id, String date, double orderNumber, double amount, double quantity) {
+    public Orders(Long id, String date, double orderNumber, double amount, double quantity) {
         this.id = id;
         this.date = date;
         this.orderNumber = orderNumber;

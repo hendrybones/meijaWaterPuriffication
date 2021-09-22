@@ -15,7 +15,8 @@ public class Invoice implements Serializable {
     private double goodReceipt;
     private double amount;
 
-    public Invoice(Date date, String customerName, double quantity, double orderNo, double goodReceipt, double amount) {
+    public Invoice( Date date, String customerName, double quantity, double orderNo, double goodReceipt, double amount) {
+
         this.date = date;
         this.customerName = customerName;
         this.quantity = quantity;
@@ -75,7 +76,7 @@ public class Invoice implements Serializable {
     @Override
     public String toString() {
         return "Invoice{" +
-                "date=" + date +
+                ", date=" + date +
                 ", customerName='" + customerName + '\'' +
                 ", quantity=" + quantity +
                 ", orderNo=" + orderNo +
