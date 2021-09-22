@@ -18,5 +18,14 @@ public class OrderService {
 
     }
     //updating orders
+    public Orders updatingOrders(Orders orders){
+    return orderRepo.save(orders);
+    }
+
+    public void deleteOder(Long id){
+    orderRepo.deleteOrderById(id);
+    }
+
+
 
 }
