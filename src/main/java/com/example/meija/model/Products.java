@@ -11,12 +11,22 @@ public class Products  implements Serializable {
     private String name;
    private double quantityInLiters;
    private String imageUrl;
+   private String productCode;
 
-    public Products(Long id, String name, double quantityInLiters, String imageUrl) {
+    public Products(Long id, String name, double quantityInLiters, String imageUrl, String productCode) {
         this.id = id;
         this.name = name;
         this.quantityInLiters = quantityInLiters;
         this.imageUrl = imageUrl;
+        this.productCode = productCode;
+    }
+
+    public String getProductCode() {
+        return productCode;
+    }
+
+    public void setProductCode(String productCode) {
+        this.productCode = productCode;
     }
 
     public Long getId() {
