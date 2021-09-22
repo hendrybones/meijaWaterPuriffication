@@ -60,4 +60,15 @@ public class orders  implements Serializable {
     public void setQuantity(double quantity) {
         this.quantity = quantity;
     }
+
+    @Override
+    public String toString() {
+        return "orders{" +
+                "id=" + id +
+                ", date='" + date + '\'' +
+                ", orderNumber=" + orderNumber +
+                ", amount=" + amount +
+                ", quantity=" + quantity +
+                '}';
+    }
 }

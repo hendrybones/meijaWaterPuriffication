@@ -60,4 +60,15 @@ public class Users implements Serializable {
     public void setIdNo(double idNo) {
         this.idNo = idNo;
     }
+
+    @Override
+    public String toString() {
+        return "Users{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", contacts='" + contacts + '\'' +
+                ", idNo=" + idNo +
+                '}';
+    }
 }

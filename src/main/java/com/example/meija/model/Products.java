@@ -50,4 +50,14 @@ public class Products  implements Serializable {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
+
+    @Override
+    public String toString() {
+        return "Products{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", quantityInLiters=" + quantityInLiters +
+                ", imageUrl='" + imageUrl + '\'' +
+                '}';
+    }
 }

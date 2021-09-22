@@ -71,4 +71,16 @@ public class Invoice implements Serializable {
     public void setAmount(double amount) {
         this.amount = amount;
     }
+
+    @Override
+    public String toString() {
+        return "Invoice{" +
+                "date=" + date +
+                ", customerName='" + customerName + '\'' +
+                ", quantity=" + quantity +
+                ", orderNo=" + orderNo +
+                ", goodReceipt=" + goodReceipt +
+                ", amount=" + amount +
+                '}';
+    }
 }

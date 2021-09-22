@@ -62,4 +62,15 @@ public class Billing  implements Serializable {
     public void setOrderNo(double orderNo) {
         this.orderNo = orderNo;
     }
+
+    @Override
+    public String toString() {
+        return "Billing{" +
+                "id=" + id +
+                ", customerName='" + customerName + '\'' +
+                ", amount=" + amount +
+                ", Date='" + Date + '\'' +
+                ", orderNo=" + orderNo +
+                '}';
+    }
 }

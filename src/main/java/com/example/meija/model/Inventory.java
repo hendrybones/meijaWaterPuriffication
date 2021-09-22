@@ -40,4 +40,13 @@ public class Inventory {
     public void setProductName(String productName) {
         this.productName = productName;
     }
+
+    @Override
+    public String toString() {
+        return "Inventory{" +
+                "id=" + id +
+                ", quantity=" + quantity +
+                ", productName='" + productName + '\'' +
+                '}';
+    }
 }
