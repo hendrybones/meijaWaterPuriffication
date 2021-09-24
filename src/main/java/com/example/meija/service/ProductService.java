@@ -25,6 +25,7 @@ public class ProductService {
 
     /* finding all products in the inventory */
     public List<Products> findAllProducts(){
+
         return productsRepo.findAll();
     }
 

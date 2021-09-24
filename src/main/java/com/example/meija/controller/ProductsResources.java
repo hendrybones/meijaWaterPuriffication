@@ -14,6 +14,7 @@ public class ProductsResources {
     private final ProductService productService;
 
     public ProductsResources( ProductService productService) {
+
         this.productService = productService;
     }
     @GetMapping("all")
