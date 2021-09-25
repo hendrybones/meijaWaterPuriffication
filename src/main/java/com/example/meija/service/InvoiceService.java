@@ -13,10 +13,12 @@ public class InvoiceService {
     private final InvoiceRepo invoiceRepo;
 @Autowired
     public InvoiceService(InvoiceRepo invoiceRepo) {
-        this.invoiceRepo = invoiceRepo;
+
+    this.invoiceRepo = invoiceRepo;
     }
     // performing crude operations
     public Invoice addInvoice(Invoice invoice){
+
     return  invoiceRepo.save(invoice);
     }
     // updating invoice
